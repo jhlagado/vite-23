@@ -11,7 +11,10 @@ yarn create vite@latest vite-23
 cd vite-23
 yarn
 
-yarn add -D jest @testing-library/react ts-jest @types/jest ts-node @testing-library/jest-dom jest-environment-jsdom @testing-library/user-event identity-obj-proxy jest-transformer-svg
+yarn add -D jest @testing-library/react ts-jest @types/jest ts-node @testing-library/jest-dom jest-environment-jsdom @testing-library/user-event identity-obj-proxy jest-transformer-svg postcss-cli autoprefixer tailwindcss
+
+npx tailwindcss init -p
+
 ```
 
 create `jest.setup.ts`
@@ -44,6 +47,27 @@ update `package.json`
   "scripts": {
     "test": "jest"
   }
+```
+
+tailwind.config.js
+
+```
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+src/index.css
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
 Run server
