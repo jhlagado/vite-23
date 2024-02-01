@@ -3092,6 +3092,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-a11y@npm:^7.6.12":
+  version: 7.6.12
+  resolution: "@storybook/addon-a11y@npm:7.6.12"
+  dependencies:
+    "@storybook/addon-highlight": "npm:7.6.12"
+    axe-core: "npm:^4.2.0"
+  checksum: 10c0/3de48357a79978b30de6c7458cd78891dd341ef12f780375a306305bd8f3c2414c76c7d3d7c9f1c2c12923451f19e23d005bdfd7fcc3af48883e0f82ee73e6b8
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-actions@npm:7.6.12":
   version: 7.6.12
   resolution: "@storybook/addon-actions@npm:7.6.12"
@@ -5237,6 +5247,13 @@ __metadata:
   version: 1.0.5
   resolution: "available-typed-arrays@npm:1.0.5"
   checksum: 10c0/c4df567ca72d2754a6cbad20088f5f98b1065b3360178169fa9b44ea101af62c0f423fc3854fa820fd6895b6b9171b8386e71558203103ff8fc2ad503fdcc660
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0":
+  version: 4.8.3
+  resolution: "axe-core@npm:4.8.3"
+  checksum: 10c0/762392d03e49b5613e0d58c19bfe0bb0df253a56d6296b07d6d968729acef4ad25822e560f067c563368ac52a62c48cb341e6940b58252ca573334cd74cf8622
   languageName: node
   linkType: hard
 
@@ -12477,6 +12494,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vite-23@workspace:."
   dependencies:
+    "@storybook/addon-a11y": "npm:^7.6.12"
     "@storybook/addon-essentials": "npm:^7.6.12"
     "@storybook/addon-interactions": "npm:^7.6.12"
     "@storybook/addon-links": "npm:^7.6.12"

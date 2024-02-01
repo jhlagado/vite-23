@@ -64,6 +64,7 @@ module.exports = {
 ```
 
 src/index.css
+
 ```
 @tailwind base;
 @tailwind components;
@@ -71,9 +72,11 @@ src/index.css
 ```
 
 Install Storybook
+
 ```
 npx storybook@latest init
 yarn add -D @storybook/manager-api @storybook/theming
+yarn add -D @storybook/addon-a11
 ```
 
 Run server
@@ -86,4 +89,10 @@ Run tests
 
 ```
 yarn test
+```
+
+Run storybook
+
+```
+yarn storybook
 ```
