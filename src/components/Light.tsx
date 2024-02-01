@@ -5,7 +5,7 @@ export interface Props {
 
 export default function App (props: Props) {
   return (
-    <button>Button</button>
+    <div className="rounded-full bg-red-500 text-green-500">Light!</div>
   );
 }
 

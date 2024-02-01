@@ -73,6 +73,7 @@ src/index.css
 Install Storybook
 ```
 npx storybook@latest init
+yarn add -D @storybook/manager-api @storybook/theming
 ```
 
 Run server
