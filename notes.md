@@ -70,6 +70,11 @@ src/index.css
 @tailwind utilities;
 ```
 
+Install Storybook
+```
+npx storybook@latest init
+```
+
 Run server
 
 ```
