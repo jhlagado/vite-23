@@ -8,8 +8,8 @@ describe("User", () => {
   });
 
   test("renders a list of users", async () => {
-    render(<Users />);
+    await render(<Users />);
     const users = await screen.findAllByRole("listitem");
-    expect(users).toHaveLength(2);
+    expect(users).toHaveLength(10);
   });
 });
