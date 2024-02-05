@@ -15,9 +15,11 @@
   },
   "dependencies": {
     "nock": "^13.5.1",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "unmock": "^0.3.18",
     "usehooks-ts": "^2.12.1"
   },
   "devDependencies": {

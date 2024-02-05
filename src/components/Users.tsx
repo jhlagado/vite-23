@@ -8,12 +8,11 @@ const Users = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(`${SERVER_HOST}/users`);
-        // const res = await fetch(`https://jsonplaceholder.typicode.com/users`);
-        const data = await res.json();
-        console.log(data);
+        const data = await res.json() as User[];
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',{data});
         setUsers(data);
       } catch (err) {
-        console.log(err);
+        console.log({err});
         setUsers([]);
       }
     };
